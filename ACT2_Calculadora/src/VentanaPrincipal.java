@@ -40,7 +40,7 @@ public class VentanaPrincipal extends JFrame {
 	//INICIALIZAMOS LOS COMPONENTES
 	private void inicializarComponentes() {
 		
-		//LOS BOTONES DIGITOS
+		//LOS BOTONES DIGITOS 0-9
 		//BOTON 1
 		JButton boton1 = new JButton("");
 		boton1.setBackground(new Color(0, 0, 0));
@@ -201,6 +201,7 @@ public class VentanaPrincipal extends JFrame {
 		botoncoma.setBounds(296, 466, 65, 50);
 		contentPane.add(botoncoma);
 		
+		//BOTON RAIZ CUBICA + VENTANA LOGIN
 		JButton botonraiz3 = new JButton("Raiz 3");
 		botonraiz3.setBackground(new Color(255, 165, 0));
 		botonraiz3.setBorder(new LineBorder(Color.BLACK));
@@ -208,7 +209,8 @@ public class VentanaPrincipal extends JFrame {
 		botonraiz3.setFont(new Font("Tahoma", Font.BOLD, 11));
 		botonraiz3.setBounds(296, 248, 65, 25);
 		contentPane.add(botonraiz3);		
-	
+		
+		//BOTON VENTANA MODAL DE ERROR
 		JButton botonraiz2 = new JButton("Raiz 2");
 		botonraiz2.setForeground(new Color(0, 0, 0));
 		botonraiz2.setBorder(new LineBorder(Color.BLACK));
@@ -230,7 +232,7 @@ public class VentanaPrincipal extends JFrame {
 		panelresultados.setColumns(10);
 		
 		
-		//FUNCIONALIDAD BOTONES DIGITOS 1-9
+		//FUNCIONALIDAD BOTONES DIGITOS 0-9
 		//BOTON DIGITO 1
 		boton1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {				
@@ -449,6 +451,7 @@ public class VentanaPrincipal extends JFrame {
 	    }
 		//METODO QUE REALIZA LAS DIFERENTES OPERACIONES
 		private void calcularResultado() {
+			//TRY-CATCH PARA CONTROLAR LA EXCEPCIÓN DE NO INTRODUCIR DIGITOS
 			try {
 				if (operador.equals("+")) {
 					resultado += new Double(panelresultados.getText());
