@@ -21,11 +21,14 @@ public class VentanaLogin extends JDialog {
 	private JTextField pantallaResultado;
 	DecimalFormat formato = new DecimalFormat("#.####");
 
-	//VENTANA DE LOGIN QUE RECIBE EL TEXTO DE LA PANTALLA DE LA CALCULADORA
+
+	/**
+	 * Create the dialog.
+	 */
 	public VentanaLogin(JTextField num1) {
 		this.pantallaResultado = num1;		
 		
-		//FORMA Y ESTILO DE LA VENTANA
+		
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setForeground(new Color(255, 255, 255));
@@ -41,7 +44,7 @@ public class VentanaLogin extends JDialog {
 		
 		//INICIALIZAMOS
 		private void inicializarComponentes() {
-			//CAMPO DE LA CONTRASEÃ‘A
+			//CAMPO DE LA CONTRASEÑA
 			password = new JPasswordField();
 			password.setBounds(80, 82, 268, 62);
 			contentPanel.add(password);		
@@ -64,34 +67,34 @@ public class VentanaLogin extends JDialog {
 			botonOK.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					
-					//Guardamos en un String el valor de la contraseÃ±a introducida
+					//Guardamos en un String el valor de la contraseña introducida
 					String contrasena = String.copyValueOf(password.getPassword());
 					
-					// Establecemos que la contraseÃ±a correcta sea avengers. En caso de serlo, se darÃ¡ paso a la operaciÃ³n
+					// Establecemos que la contraseña correcta sea avengers. En caso de serlo, se dará paso a la operación
 					if(contrasena.equals("avengers")) {		
 						
 						try {
-						// Esta ventana serÃ¡ la que realice la operaciÃ³n con el nÃºmero que le ha llegado por pantalla desde la ventana principal
-						// Convertimos a Double el valor en string de la caja de texto del nÃºmero
+						// Esta ventana será la que realice la operación con el número que le ha llegado por pantalla desde la ventana principal
+						// Convertimos a Double el valor en string de la caja de texto del número
 						double numero = Double.parseDouble(pantallaResultado.getText());
-						// Calculamos la raÃ­z cuadrada
-						double raÃ­zCuadrada = Math.cbrt(numero);
+						// Calculamos la raíz cuadrada
+						double raízCuadrada = Math.cbrt(numero);
 						
-						// Asignamos a la JLabel que contendrÃ¡ el resultado del valor de la operaciÃ³n, que saldrÃ¡ en la etiqueta de la VentanaPrincipal
-						pantallaResultado.setText("Resultado: " + formato.format(raÃ­zCuadrada));
+						// Asignamos a la JLabel que contendrá el resultado del valor de la operación, que saldrá en la etiqueta de la VentanaPrincipal
+						pantallaResultado.setText("Resultado: " + formato.format(raízCuadrada));
 
-						// Hacemos que la ventana desaparezca (se cierra) para dar paso a la operaciÃ³n de la calculadora
+						// Hacemos que la ventana desaparezca (se cierra) para dar paso a la operación de la calculadora
 						dispose();
 						
 						}
 					
 						catch (Exception e1) {
-							JOptionPane.showMessageDialog(botonOK, "Introduce un nÃºmero");
+							JOptionPane.showMessageDialog(botonOK, "Introduce un número");
 							dispose();
 						}
 
 					} else {
-						setTitle("ContraseÃ±a incorrecta, vuelva a introducirla:");
+						setTitle("Contraseña incorrecta, vuelva a introducirla:");
 						
 						password.setText("");
 						password.requestFocus();

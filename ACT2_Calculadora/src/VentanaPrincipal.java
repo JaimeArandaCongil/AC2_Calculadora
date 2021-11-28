@@ -32,7 +32,7 @@ public class VentanaPrincipal extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("calcu.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("fotos\\calcu.png"));
 		setTitle("CalculaAPP");
 		setResizable(false);
 		inicializarComponentes();
@@ -40,19 +40,19 @@ public class VentanaPrincipal extends JFrame {
 	//INICIALIZAMOS LOS COMPONENTES
 	private void inicializarComponentes() {
 		
-		//LOS BOTONES DIGITOS 0-9
+		//LOS BOTONES DIGITOS
 		//BOTON 1
 		JButton boton1 = new JButton("");
 		boton1.setBackground(new Color(0, 0, 0));
 		boton1.setBorder(new LineBorder(Color.BLACK));
-		boton1.setIcon(new ImageIcon("1.png"));
+		boton1.setIcon(new ImageIcon("fotos\\1.png"));
 		boton1.setForeground(new Color(0, 0, 0));
 		boton1.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		boton1.setBounds(29, 466, 65, 50);
 		contentPane.add(boton1);
 		//BOTON 2 	
 		JButton boton2 = new JButton("");
-		boton2.setIcon(new ImageIcon("2.png"));
+		boton2.setIcon(new ImageIcon("fotos\\2.png"));
 		boton2.setBorder(new LineBorder(Color.BLACK));
 		boton2.setBackground(new Color(0, 0, 0));
 		boton2.setForeground(new Color(255, 255, 255));
@@ -61,7 +61,7 @@ public class VentanaPrincipal extends JFrame {
 		contentPane.add(boton2);
 		//BOTON 3	
 		JButton boton3 = new JButton("");
-		boton3.setIcon(new ImageIcon("3.png"));
+		boton3.setIcon(new ImageIcon("fotos\\3.png"));
 		boton3.setBorder(new LineBorder(Color.BLACK));		
 		boton3.setBackground(new Color(0, 0, 0));
 		boton3.setForeground(new Color(255, 255, 255));
@@ -70,7 +70,7 @@ public class VentanaPrincipal extends JFrame {
 		contentPane.add(boton3);
 		//BOTON 4
 		JButton boton4 = new JButton("");
-		boton4.setIcon(new ImageIcon("4.png"));
+		boton4.setIcon(new ImageIcon("fotos\\4.png"));
 		boton4.setBorder(new LineBorder(Color.BLACK));
 		boton4.setBackground(new Color(0, 0, 0));
 		boton4.setForeground(new Color(255, 255, 255));
@@ -79,7 +79,7 @@ public class VentanaPrincipal extends JFrame {
 		contentPane.add(boton4);
 		//BOTON 5
 		JButton boton5 = new JButton("");
-		boton5.setIcon(new ImageIcon("5.png"));
+		boton5.setIcon(new ImageIcon("fotos\\5.png"));
 		boton5.setBorder(new LineBorder(Color.BLACK));
 		boton5.setBackground(new Color(0, 0, 0));
 		boton5.setForeground(new Color(255, 255, 255));
@@ -88,7 +88,7 @@ public class VentanaPrincipal extends JFrame {
 		contentPane.add(boton5);
 		//BOTON 6
 		JButton boton6 = new JButton("");
-		boton6.setIcon(new ImageIcon("6.png"));
+		boton6.setIcon(new ImageIcon("fotos\\6.png"));
 		boton6.setBorder(new LineBorder(Color.BLACK));
 		boton6.setBackground(new Color(0, 0, 0));
 		boton6.setForeground(new Color(255, 255, 255));
@@ -97,7 +97,7 @@ public class VentanaPrincipal extends JFrame {
 		contentPane.add(boton6);
 		//BOTON 7	
 		JButton boton7 = new JButton("");
-		boton7.setIcon(new ImageIcon("7.png"));
+		boton7.setIcon(new ImageIcon("fotos\\7.png"));
 		boton7.setBorder(new LineBorder(Color.BLACK));
 		boton7.setBackground(new Color(0, 0, 0));
 		boton7.setForeground(new Color(255, 255, 255));
@@ -106,7 +106,7 @@ public class VentanaPrincipal extends JFrame {
 		contentPane.add(boton7);
 		//BOTON 8
 		JButton boton8 = new JButton("");
-		boton8.setIcon(new ImageIcon("8.png"));
+		boton8.setIcon(new ImageIcon("fotos\\8.png"));
 		boton8.setBorder(new LineBorder(Color.BLACK));
 		boton8.setBackground(new Color(0, 0, 0));
 		boton8.setForeground(new Color(255, 255, 255));
@@ -115,7 +115,7 @@ public class VentanaPrincipal extends JFrame {
 		contentPane.add(boton8);
 		//BOTON 9
 		JButton boton9 = new JButton("");
-		boton9.setIcon(new ImageIcon("9.png"));
+		boton9.setIcon(new ImageIcon("fotos\\9.png"));
 		boton9.setBorder(new LineBorder(Color.BLACK));
 		boton9.setBackground(new Color(0, 0, 0));
 		boton9.setForeground(new Color(255, 255, 255));
@@ -124,7 +124,7 @@ public class VentanaPrincipal extends JFrame {
 		contentPane.add(boton9);
 		//BOTON 0
 		JButton boton0 = new JButton("");
-		boton0.setIcon(new ImageIcon("0.png"));
+		boton0.setIcon(new ImageIcon("fotos\\0.png"));
 		boton0.setForeground(Color.BLACK);
 		boton0.setBorder(new LineBorder(Color.BLACK));
 		boton0.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -143,7 +143,7 @@ public class VentanaPrincipal extends JFrame {
 		
 		//BOTON PARA BORRAR LOS DIGITOS
 		JButton botonborrar = new JButton("");
-		botonborrar.setIcon(new ImageIcon("C.png"));
+		botonborrar.setIcon(new ImageIcon("fotos\\C.png"));
 		botonborrar.setBorder(new LineBorder(Color.BLACK));
 		botonborrar.setBackground(new Color(0, 0, 0));
 		botonborrar.setForeground(new Color(255, 165, 0));
@@ -153,7 +153,7 @@ public class VentanaPrincipal extends JFrame {
 		
 		//BOTON PARA DIVIDIR
 		JButton botondividir = new JButton("");
-		botondividir.setIcon(new ImageIcon("division.png"));
+		botondividir.setIcon(new ImageIcon("fotos\\division.png"));
 		botondividir.setBorder(new LineBorder(Color.BLACK));
 		botondividir.setBackground(new Color(0, 0, 0));
 		botondividir.setForeground(new Color(255, 165, 0));
@@ -163,7 +163,7 @@ public class VentanaPrincipal extends JFrame {
 		
 		//BOTON PARA MULTIPLICAR
 		JButton botonmultiplicar = new JButton("");
-		botonmultiplicar.setIcon(new ImageIcon("X.png"));
+		botonmultiplicar.setIcon(new ImageIcon("fotos\\X.png"));
 		botonmultiplicar.setBorder(new LineBorder(Color.BLACK));
 		botonmultiplicar.setBackground(new Color(0, 0, 0));
 		botonmultiplicar.setForeground(new Color(255, 165, 0));
@@ -173,7 +173,7 @@ public class VentanaPrincipal extends JFrame {
 		
 		//BOTON PARA RESTAR
 		JButton botonresta = new JButton("");
-		botonresta.setIcon(new ImageIcon("-.png"));
+		botonresta.setIcon(new ImageIcon("fotos\\-.png"));
 		botonresta.setBorder(new LineBorder(Color.BLACK));
 		botonresta.setBackground(new Color(0, 0, 0));
 		botonresta.setForeground(new Color(250, 128, 114));
@@ -183,7 +183,7 @@ public class VentanaPrincipal extends JFrame {
 		
 		//BOTON PARA SUMAR
 		JButton botonsuma = new JButton("");			
-		botonsuma.setIcon(new ImageIcon("+.png"));
+		botonsuma.setIcon(new ImageIcon("fotos\\+.png"));
 		botonsuma.setBorder(new LineBorder(Color.BLACK));
 		botonsuma.setBackground(new Color(0, 0, 0));
 		botonsuma.setForeground(new Color(255, 165, 0));
@@ -191,9 +191,9 @@ public class VentanaPrincipal extends JFrame {
 		botonsuma.setBounds(296, 388, 65, 50);
 		contentPane.add(botonsuma);
 		
-		//BOTON PARA AÃ‘ADIR UNA COMA
+		//BOTON PARA AÑADIR UNA COMA
 		JButton botoncoma = new JButton("");
-		botoncoma.setIcon(new ImageIcon("coma.png"));
+		botoncoma.setIcon(new ImageIcon("fotos\\coma.png"));
 		botoncoma.setBorder(new LineBorder(Color.BLACK));
 		botoncoma.setBackground(new Color(0, 0, 0));
 		botoncoma.setForeground(new Color(255, 165, 0));
@@ -201,7 +201,6 @@ public class VentanaPrincipal extends JFrame {
 		botoncoma.setBounds(296, 466, 65, 50);
 		contentPane.add(botoncoma);
 		
-		//BOTON RAIZ CUBICA + VENTANA LOGIN
 		JButton botonraiz3 = new JButton("Raiz 3");
 		botonraiz3.setBackground(new Color(255, 165, 0));
 		botonraiz3.setBorder(new LineBorder(Color.BLACK));
@@ -209,8 +208,7 @@ public class VentanaPrincipal extends JFrame {
 		botonraiz3.setFont(new Font("Tahoma", Font.BOLD, 11));
 		botonraiz3.setBounds(296, 248, 65, 25);
 		contentPane.add(botonraiz3);		
-		
-		//BOTON VENTANA MODAL DE ERROR
+	
 		JButton botonraiz2 = new JButton("Raiz 2");
 		botonraiz2.setForeground(new Color(0, 0, 0));
 		botonraiz2.setBorder(new LineBorder(Color.BLACK));
@@ -232,7 +230,7 @@ public class VentanaPrincipal extends JFrame {
 		panelresultados.setColumns(10);
 		
 		
-		//FUNCIONALIDAD BOTONES DIGITOS 0-9
+		//FUNCIONALIDAD BOTONES DIGITOS 1-9
 		//BOTON DIGITO 1
 		boton1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {				
@@ -374,7 +372,7 @@ public class VentanaPrincipal extends JFrame {
 				
 			}
 		});
-		//MULTIPLICACIÃ“N
+		//MULTIPLICACIÓN
 		botonmultiplicar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -384,7 +382,7 @@ public class VentanaPrincipal extends JFrame {
 				
 			}
 		});
-		//DIVISIÃ“N
+		//DIVISIÓN
 		botondividir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -418,7 +416,7 @@ public class VentanaPrincipal extends JFrame {
 				
 			}
 		});
-		//LLAMA A UN MÃ‰TODO QUE CALCULA EL RESULTADO
+		//LLAMA A UN MÉTODO QUE CALCULA EL RESULTADO
 		botonresultado.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -434,24 +432,23 @@ public class VentanaPrincipal extends JFrame {
 				
 			}
 		});
-		//ABRE OTRA VENTANA DE LA CLASE VentanaLogin en la que introducir una contraseÃ±a
-		//Una vez acertada se podrÃ¡ utilizar la operaciÃ³n
+		//ABRE OTRA VENTANA DE LA CLASE VentanaLogin en la que introducir una contraseña
+		//Una vez acertada se podrá utilizar la operación
 		botonraiz3.addActionListener(new ActionListener(){
 			
 			public void actionPerformed(ActionEvent e) {				
-				// Cuando se hace click en el botÃ³n de raÃ­z cuadrada, se crea un objeto de tipo
-				// ventanaLogin, por lo que esta se crearÃ¡. Se le pasan los valores de la caja de texto del nÃºmero1
+				// Cuando se hace click en el botón de raíz cuadrada, se crea un objeto de tipo
+				// ventanaLogin, por lo que esta se creará. Se le pasan los valores de la caja de texto del número1
 				// y de la etiqueta del resultado, para que puedan intercambiarse los valores entre las dos ventanas
-				// La operaciÃ³n de raÃ­z cÃºbica se realizarÃ¡ en la otra ventana con los valores que le llegen a trvÃ©s de estos parÃ¡metros
-				// Y la ventana principal recibirÃ¡ el resultado desde la ventana de login, una vez haya hecho la operaciÃ³n
+				// La operación de raíz cúbica se realizará en la otra ventana con los valores que le llegen a trvés de estos parámetros
+				// Y la ventana principal recibirá el resultado desde la ventana de login, una vez haya hecho la operación
 				VentanaLogin ventanaLogin = new VentanaLogin(panelresultados);
 			}		
 		});
 		
 	    }
-		//METODO QUE REALIZA LAS DIFERENTES OPERACIONES
+		
 		private void calcularResultado() {
-			//TRY-CATCH PARA CONTROLAR LA EXCEPCIÃ“N DE NO INTRODUCIR DIGITOS
 			try {
 				if (operador.equals("+")) {
 					resultado += new Double(panelresultados.getText());
@@ -462,13 +459,13 @@ public class VentanaPrincipal extends JFrame {
 				} else if (operador.equals("*")) {
 					resultado *= new Double(panelresultados.getText());
 				}
-				//CON .FORMAT LIMITAMOS EL NUMERO DE DECIMALES A 4
+				
 				panelresultados.setText("" + formato.format(resultado));
 				operador = "";
 			}
 			
 			catch (Exception e1) {
-				JOptionPane.showMessageDialog(panelresultados, "Introduce un nÃºmero");
+				JOptionPane.showMessageDialog(panelresultados, "Introduce un número");
 			}
 			
 		}
