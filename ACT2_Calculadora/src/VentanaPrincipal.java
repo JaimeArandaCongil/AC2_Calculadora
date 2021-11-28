@@ -191,7 +191,7 @@ public class VentanaPrincipal extends JFrame {
 		botonsuma.setBounds(296, 388, 65, 50);
 		contentPane.add(botonsuma);
 		
-		//BOTON PARA AÑADIR UNA COMA
+		//BOTON PARA AÃ‘ADIR UNA COMA
 		JButton botoncoma = new JButton("");
 		botoncoma.setIcon(new ImageIcon("coma.png"));
 		botoncoma.setBorder(new LineBorder(Color.BLACK));
@@ -372,7 +372,7 @@ public class VentanaPrincipal extends JFrame {
 				
 			}
 		});
-		//MULTIPLICACIÓN
+		//MULTIPLICACIÃ“N
 		botonmultiplicar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -382,7 +382,7 @@ public class VentanaPrincipal extends JFrame {
 				
 			}
 		});
-		//DIVISIÓN
+		//DIVISIÃ“N
 		botondividir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -416,7 +416,7 @@ public class VentanaPrincipal extends JFrame {
 				
 			}
 		});
-		//LLAMA A UN MÉTODO QUE CALCULA EL RESULTADO
+		//LLAMA A UN MÃ‰TODO QUE CALCULA EL RESULTADO
 		botonresultado.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -432,22 +432,22 @@ public class VentanaPrincipal extends JFrame {
 				
 			}
 		});
-		//ABRE OTRA VENTANA DE LA CLASE VentanaLogin en la que introducir una contraseña
-		//Una vez acertada se podrá utilizar la operación
+		//ABRE OTRA VENTANA DE LA CLASE VentanaLogin en la que introducir una contraseÃ±a
+		//Una vez acertada se podrÃ¡ utilizar la operaciÃ³n
 		botonraiz3.addActionListener(new ActionListener(){
 			
 			public void actionPerformed(ActionEvent e) {				
-				// Cuando se hace click en el botón de raíz cuadrada, se crea un objeto de tipo
-				// ventanaLogin, por lo que esta se creará. Se le pasan los valores de la caja de texto del número1
+				// Cuando se hace click en el botÃ³n de raÃ­z cuadrada, se crea un objeto de tipo
+				// ventanaLogin, por lo que esta se crearÃ¡. Se le pasan los valores de la caja de texto del nÃºmero1
 				// y de la etiqueta del resultado, para que puedan intercambiarse los valores entre las dos ventanas
-				// La operación de raíz cúbica se realizará en la otra ventana con los valores que le llegen a trvés de estos parámetros
-				// Y la ventana principal recibirá el resultado desde la ventana de login, una vez haya hecho la operación
+				// La operaciÃ³n de raÃ­z cÃºbica se realizarÃ¡ en la otra ventana con los valores que le llegen a trvÃ©s de estos parÃ¡metros
+				// Y la ventana principal recibirÃ¡ el resultado desde la ventana de login, una vez haya hecho la operaciÃ³n
 				VentanaLogin ventanaLogin = new VentanaLogin(panelresultados);
 			}		
 		});
 		
 	    }
-		
+		//METODO QUE REALIZA LAS DIFERENTES OPERACIONES
 		private void calcularResultado() {
 			try {
 				if (operador.equals("+")) {
@@ -459,13 +459,13 @@ public class VentanaPrincipal extends JFrame {
 				} else if (operador.equals("*")) {
 					resultado *= new Double(panelresultados.getText());
 				}
-				
+				//CON .FORMAT LIMITAMOS EL NUMERO DE DECIMALES A 4
 				panelresultados.setText("" + formato.format(resultado));
 				operador = "";
 			}
 			
 			catch (Exception e1) {
-				JOptionPane.showMessageDialog(panelresultados, "Introduce un número");
+				JOptionPane.showMessageDialog(panelresultados, "Introduce un nÃºmero");
 			}
 			
 		}
